@@ -1,0 +1,7 @@
+.myButton {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.highlighted {
+  background-color: deeppink;
+}
