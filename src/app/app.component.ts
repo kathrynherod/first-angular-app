@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //title = 'Angular app';
-  tweet = {
-    likesCount: 10,
-    isLiked: true
-  };
+  // tweet = {
+  //   likesCount: 10,
+  //   isLiked: true
+  // };
+  courses = [1, 2];
 }

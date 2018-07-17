@@ -8,6 +8,8 @@ import { CourseComponent } from './course/course.component';
 import { TitleCaseComponent } from './title-case/title-case.component';
 import { TitleCasePipe } from './title-case/title-case.pipe';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LikeComponent } from './like/like.component';
     CourseComponent,
     TitleCaseComponent,
     TitleCasePipe,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService],
