@@ -24,7 +24,6 @@ export class SignupFormComponent {
   });
 
   login() {
-    // let isValid = authService.login(this.form.value);
     const isValid = false;
     if (!isValid) {
       this.form.setErrors({

@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="login()">
+<form [formGroup]="form" (ngSubmit)="login()" class="myForm">
   <div *ngIf="form.errors" class="alert alert-danger">the username or password is invalid.</div>
   <div formGroupName="account">
     <div class="form-group">
