@@ -1,6 +1,6 @@
 import { CoursesService } from './courses/courses.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -8,6 +8,11 @@ import { CourseComponent } from './course/course.component';
 import { TitleCaseComponent } from './title-case/title-case.component';
 import { TitleCasePipe } from './title-case/title-case.pipe';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { UdemyFormComponent } from './udemy-form/udemy-form.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +21,14 @@ import { LikeComponent } from './like/like.component';
     CourseComponent,
     TitleCaseComponent,
     TitleCasePipe,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective,
+    ZippyComponent,
+    ContactFormComponent,
+    UdemyFormComponent,
+    SignupFormComponent
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [CoursesService],
   bootstrap: [AppComponent]
 })
