@@ -1,3 +1,5 @@
+import { DataService } from './_services/data.service';
+import { PostService } from './_services/post.service';
 import { CoursesService } from './courses/courses.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -14,6 +16,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { UdemyFormComponent } from './udemy-form/udemy-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PostComponent } from './post/post.component';
+import { HttpModule } from '@angular/http';
+import { GithubFollowersComponent } from './github-followers/github-followers.component';
+import { PostsComponent } from 'src/app/posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +34,13 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     ContactFormComponent,
     UdemyFormComponent,
     SignupFormComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    PostComponent,
+    GithubFollowersComponent,
+    PostsComponent
   ],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
-  providers: [CoursesService],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule],
+  providers: [CoursesService, PostService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
