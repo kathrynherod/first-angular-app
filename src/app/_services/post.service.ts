@@ -34,8 +34,4 @@ export class PostService {
     })
 }
 
-// export class PostsService {
-//   constructor(http: Http) {
-//     super('http://abcjsonplaceholder.typicode.com/posts', http);
-//   }
-// }
+

@@ -20,6 +20,7 @@ import { PostComponent } from './post/post.component';
 import { HttpModule } from '@angular/http';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
 import { PostsComponent } from 'src/app/posts/posts.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
